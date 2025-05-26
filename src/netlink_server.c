@@ -23,7 +23,7 @@ int main() {
 
     memset(&src_addr, 0, sizeof(src_addr));
     src_addr.nl_family = AF_NETLINK;
-    src_addr.nl_pid = getpid(); // 服务器的 PID
+    src_addr.nl_pid = 0; // 服务器的 PID
     src_addr.nl_groups = 0;
 
     if (bind(sock_fd, (struct sockaddr *)&src_addr, sizeof(src_addr)) < 0) {
