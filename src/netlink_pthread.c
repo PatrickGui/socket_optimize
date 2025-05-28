@@ -8,9 +8,9 @@
 
 #define NETLINK_TEST NETLINK_USERSOCK
 // #define NETLINK_TEST 31
-#define MAX_PAYLOAD 1024
+#define MAX_PAYLOAD 4096
 #define NUM_CLIENTS 3
-#define NUM_MESSAGES 10
+#define NUM_MESSAGES 100
 
 typedef struct {
     int client_id;
